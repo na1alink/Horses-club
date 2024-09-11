@@ -1,0 +1,33 @@
+:root {
+  --container-width: 1366px;
+  --container-padding: 70px;
+
+  --font-family: "Golos Text", sans-serif;
+  --second-family: "Merriweather", sans-serif;
+  --third-family: "Montserrat", sans-serif;
+
+  --white: #ffffff;
+  --main: #8b8b8b;
+  --black: #14171c;
+  --gray: #595653;
+  --text: #313131;
+  --accent: #f54932;
+  --primary: #1f1f1f;
+  --primary-hover: #fbce51;
+  --primary-focus: #fbce51;
+  --primary-disabled: #939393;
+
+  --error: #b01c25;
+}
+
+@media (max-width: 992px) {
+  :root {
+    --container-padding: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --container-padding: 20px;
+  }
+}

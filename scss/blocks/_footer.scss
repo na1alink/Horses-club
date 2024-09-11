@@ -1,0 +1,16 @@
+.footer {
+  background: #e9ded4;
+  padding-top: 40px;
+  padding-bottom: 72px;
+
+  &__descr {
+    font-variant-numeric: lining-nums proportional-nums;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+
+    opacity: 0.6;
+  }
+}
