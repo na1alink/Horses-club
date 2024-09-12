@@ -94,6 +94,7 @@
   background-position: center center;
   background-size: 50% 50%;
   transition: 0.3s ease;
+  flex-shrink: 0;
 
   &:hover {
     background-color: var(--primary-hover);
@@ -108,7 +109,12 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='21' viewBox='0 0 12 21' fill='none'%3E%3Cpath d='M2.00001 2L10.4615 10.4615L2.00001 18.9231' stroke='white' stroke-width='2' stroke-linecap='square'/%3E%3C/svg%3E");
 }
 
-.swiper-pagination {
+.button-prev.swiper-button-disabled,
+.button-next.swiper-button-disabled {
+  background-color: #d6d6d6 !important;
+}
+
+.participants .swiper-pagination {
   position: static;
   display: flex;
   align-items: center;

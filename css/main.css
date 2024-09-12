@@ -992,6 +992,9 @@ img {
 .stages-swiper {
   display: none;
 }
+.stages-swiper__buttons {
+  display: none;
+}
 
 @media (min-width: 1200px) {
   .stages__card-3 {
@@ -1091,16 +1094,54 @@ img {
   .stages-swiper {
     display: block;
   }
+  .stages-swiper__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: auto;
+    margin-top: 25px;
+    gap: 16px;
+  }
 }
 @media (max-width: 767px) {
   .stages__top {
     margin-bottom: 150px;
   }
   .stages__img {
-    top: 140px;
+    top: 150px;
     z-index: 10;
   }
 }
+.stages .swiper-pagination {
+  position: static;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+}
+
+.stages .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #d9d9d9;
+}
+
+.stages .swiper-pagination-bullet-active {
+  background: var(--text);
+}
+
 .participants__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1219,6 +1260,8 @@ img {
   background-size: 50% 50%;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .button-prev:hover,
 .button-next:hover {
@@ -1235,7 +1278,12 @@ img {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='21' viewBox='0 0 12 21' fill='none'%3E%3Cpath d='M2.00001 2L10.4615 10.4615L2.00001 18.9231' stroke='white' stroke-width='2' stroke-linecap='square'/%3E%3C/svg%3E");
 }
 
-.swiper-pagination {
+.button-prev.swiper-button-disabled,
+.button-next.swiper-button-disabled {
+  background-color: #d6d6d6 !important;
+}
+
+.participants .swiper-pagination {
   position: static;
   display: -webkit-box;
   display: -ms-flexbox;

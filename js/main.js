@@ -49,11 +49,13 @@ document.addEventListener("DOMContentLoaded", function () {
     watchSlidesProgress: true,
     watchOverflow: true,
     watchSlidesVisibility: true,
-    loop: true,
 
+    pagination: {
+      el: ".stages-swiper__buttons .swiper-pagination",
+    },
     navigation: {
-      nextEl: ".stages .swiper-button-next",
-      prevEl: ".stages .swiper-button-prev",
+      nextEl: ".stages-swiper__buttons .button-next",
+      prevEl: ".stages-swiper__buttons .button-prev",
     },
   });
 });
