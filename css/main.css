@@ -428,7 +428,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url("../../images/hero.webp") no-repeat;
+  background: url("../images/hero.webp") no-repeat;
   background-position: center center;
   background-size: cover;
   padding-bottom: 20px;
@@ -654,7 +654,7 @@ img {
 }
 @media (max-width: 992px) {
   .home {
-    background: url("../../images/hero-2.webp") no-repeat;
+    background: url("../images/hero-2.webp") no-repeat;
     background-position: bottom left;
     background-size: cover;
     height: calc(100vh - 60px);
@@ -667,7 +667,7 @@ img {
   .home {
     height: 775px;
     padding-top: 90px;
-    background: url("../../images/hero-2.webp") no-repeat;
+    background: url("../images/hero-2.webp") no-repeat;
     background-position: center center;
     background-size: cover;
   }
@@ -955,7 +955,7 @@ img {
   display: flex;
   gap: 16px;
   padding: 20px;
-  background-image: url("../../images/bg.webp");
+  background-image: url("../images/bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1079,7 +1079,7 @@ img {
   .stages__slide {
     padding-top: 40px;
     padding-bottom: 10px;
-    background-image: url("../../images/bg.webp");
+    background-image: url("../images/bg.webp");
     background-repeat: no-repeat;
     background-size: cover;
     display: -webkit-box;
